@@ -1,0 +1,60 @@
+@media (max-width: 1200px) {
+  .container {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1100px) {
+  .home-image {
+    height: 90% !important;
+
+    &::before {
+      font-size: 120px !important;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .home-image {
+    &::before {
+      font-size: 100px !important;
+    }
+  }
+
+  .footer-c {
+    grid-template-columns: 1fr !important;
+    row-gap: 40px !important;
+  }
+  .cart-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (max-width: 550px) {
+  header {
+    #menu-icon {
+      display: block !important;
+    }
+    nav {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: $header-color;
+      row-gap: 8px;
+      padding: 10px 0;
+      box-shadow: 0 20px 20px rgba(237, 237, 237, 0.45);
+      clip-path: circle(0% at 0% 0%);
+      transition: all 0.5s ease;
+      &.open {
+        clip-path: circle(144% at 0% 0%);
+      }
+    }
+  }
+
+  .home-image {
+    &::before {
+      font-size: 80px !important;
+    }
+  }
+}

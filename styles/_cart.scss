@@ -1,0 +1,103 @@
+.cart-container {
+  margin-top: 50px !important;
+  .back-icon {
+    display: flex;
+    align-items: center;
+    color: $text-color;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .cart-title {
+    margin: 30px 0;
+    font-size: 45px;
+  }
+
+  .cart-wrapper {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+
+    // Cart Items
+    .cart-items {
+      // Cart Item
+      .cart-item {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgb(227, 227, 227);
+        // Image
+        img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+        }
+        // Info
+        .cart-item-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          // Title
+          h2 {
+            font-size: 20px;
+            font-weight: 400;
+          }
+          // Quantity
+          .cart-item-quantity {
+            border: 1px solid $text-color;
+            width: 40px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        }
+
+        // Price
+        .cart-item-price {
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        // Remove Button
+        .remove-btn {
+          max-width: 100px;
+          background-color: crimson;
+          padding: 8px;
+          color: $bg-color;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+
+    // Checkbox
+    .cart-checkbox {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .cart-total {
+        font-size: 32px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      .checkout-btn {
+        background-color: $main-color;
+        padding: 10px;
+        color: $bg-color;
+        font-size: 17px;
+        font-weight: bold;
+        border-radius: 5px;
+        max-width: 150px;
+        cursor: pointer;
+      }
+      .fee-title {
+        font-size: 20px;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+    }
+  }
+}
