@@ -8,4 +8,4 @@ Bu proje, Html, Javascript ve Scss kullanılarak geliştirilen responsive bir ya
 .HTML, Javasicript&Scss: Modern ve temiz kod yapısı. .Kolay Kullanım: Açık ve anlaşılır yapısıyla düzenlemeye uygun.
 
 # Ekran Görüntüsü
-![commerce](https://github.com/user-attachments/assets/80fffe4e-a767-4edf-a7be-6667e0cb82fb)
+![commerce-ezgif com-crop](https://github.com/user-attachments/assets/c4ea089b-9ff8-40b5-8aba-8fe87685702a)
